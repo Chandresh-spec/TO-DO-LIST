@@ -13,8 +13,8 @@
 
         <!-- Action Buttons -->
         <div class="task-buttons">
-            <a href="#" class="edit-btn">Edit</a>
-            <a href="#" class="delete-btn">Delete</a>
+            <a href="{% url 'edit' task.pk %}" class="edit-btn">Edit</a>
+            <a href="{% url 'delete' task.pk %}" class="delete-btn">Delete</a>
             <a href="#" class="complete-btn">Complete</a>
         </div>
     </div>

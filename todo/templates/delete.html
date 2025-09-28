@@ -1,0 +1,13 @@
+{% extends "index.html" %}
+{% block content %}
+<p>{{task.text}}</p>
+<p> do u want to delete this task ?</p>
+<form method="POST">
+    {% csrf_token %}
+    <button type='submit'>yes, delete</button>
+    <p>No</p>
+    <a href="{% url 'home' %}">no  back to home</a>
+
+</form>
+
+{% endblock  %}

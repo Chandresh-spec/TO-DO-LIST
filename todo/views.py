@@ -42,3 +42,20 @@ def edit_view(request,pk):
 
     form=AddTask(instance=task)
     return render(request,'edit.html',{'form':form})
+
+
+
+def delete_view(request,pk):
+    task=get_object_or_404(Task,pk=pk)
+
+    if request.method=='POST':
+        task.delete()
+        return redirect('home')
+    
+    return render(request,'delete.html',{'task':task})
+
+
+
+def complete_view(request,pk):
+    task=get_object_or_404(Task,pk=pk)
+    pass

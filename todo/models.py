@@ -7,6 +7,7 @@ class Task(models.Model):
     text=models.TextField(max_length=200)
     created_date=models.DateTimeField(auto_now_add=True)
     updated_date=models.DateField(auto_now=True)
+    complete=models.BooleanField(default=False)
 
 
     def __str__(self):
