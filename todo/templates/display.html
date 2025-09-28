@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+{% load static %}
+
+{% block content %}
+<div class="task-grid">
+    {% for task in tasks %}
+    <div class="task-card">
+        <!-- Task Text -->
+        <p class="task-text">{{ task.text }}</p>
+
+        <!-- Created Date -->
+        <p class="task-date">Created: {{ task.created_date|date:"M d, Y H:i" }}</p>
+
+        <!-- Action Buttons -->
+        <div class="task-buttons">
+            <a href="#" class="edit-btn">Edit</a>
+            <a href="#" class="delete-btn">Delete</a>
+            <a href="#" class="complete-btn">Complete</a>
+        </div>
+    </div>
+    {% empty %}
+    <p>No tasks found. Add some tasks!</p>
+    {% endfor %}
+</div>
+{% endblock %}
