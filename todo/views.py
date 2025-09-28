@@ -60,4 +60,4 @@ def complete_view(request,pk):
     task=get_object_or_404(Task,pk=pk)
     task.complete=not task.complete
     task.save()
-    redirect('home')
+    return redirect ('home')
