@@ -58,4 +58,6 @@ def delete_view(request,pk):
 
 def complete_view(request,pk):
     task=get_object_or_404(Task,pk=pk)
-    pass
+    task.complete=not task.complete
+    task.save()
+    redirect('home')
