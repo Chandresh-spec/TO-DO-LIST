@@ -6,6 +6,8 @@ class AddTask(forms.ModelForm):
     class Meta:
         model=Task
         fields=('text',)
+    
 
     
+
     
