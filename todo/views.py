@@ -61,3 +61,10 @@ def complete_view(request,pk):
     task.complete=not task.complete
     task.save()
     return redirect ('home')
+
+
+
+
+def completed_view(request):
+    tasks=Task.objects.filter(complete=True)
+    return render(request,'completed.html',{'tasks':tasks})

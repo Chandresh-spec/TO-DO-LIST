@@ -110,3 +110,147 @@
 
 .complete-btn { background-color: #2ecc71; }
 .complete-btn:hover { background-color: #27ae60; }
+
+
+
+
+
+
+
+/* Container */
+.form-container {
+    width: 400px;
+    margin: 50px auto;
+    padding: 25px;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+/* Heading */
+.form-container h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+/* Form fields */
+.task-form p {
+    margin: 15px 0;
+    text-align: left;
+}
+
+.task-form input[type="text"] {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #dcdcdc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.task-form input[type="text"]:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 6px rgba(52, 152, 219, 0.4);
+}
+
+/* Button */
+.submit-btn {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    background: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+    background: #2980b9;
+}
+
+
+
+
+
+
+
+/* Delete container */
+.delete-container {
+    width: 450px;
+    margin: 80px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    text-align: center;
+}
+
+/* Heading */
+.delete-container h2 {
+    color: #e74c3c;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+/* Task text */
+.task-text {
+    font-size: 18px;
+    font-weight: bold;
+    color: #2c3e50;
+    margin: 10px 0;
+}
+
+/* Warning message */
+.warning {
+    font-size: 16px;
+    color: #7f8c8d;
+    margin-bottom: 20px;
+}
+
+/* Form buttons */
+.delete-form {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+/* Delete button */
+.delete-btn {
+    padding: 12px 20px;
+    background: #e74c3c;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.delete-btn:hover {
+    background: #c0392b;
+}
+
+/* Cancel button (styled as link) */
+.cancel-btn {
+    padding: 12px 20px;
+    background: #bdc3c7;
+    color: #2c3e50;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cancel-btn:hover {
+    background: #95a5a6;
+}
